@@ -1,0 +1,68 @@
+.container
+{
+    width: 216px;
+    height: 822px;
+    min-width: 216px;
+    max-width: 216px;
+    border-right:0.5px solid #050552;
+    padding: 24px 12.5px 24px 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.heading h1{
+    color: #050552;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.2px;
+    width: 171px;
+    height: 24px;
+}
+
+.options
+{
+    width: 191.5px;
+    height: 129px;
+    padding-bottom: 30px;
+}
+
+.option{
+    width: 191.5px;
+    height: 36px;
+    padding: 12.5px;   
+}
+.option:hover{
+    background-color: rgba(5, 5, 82, 0.08);
+    border-radius: 5px;
+    border: 1px;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.cont img{
+    height: 20px;
+    width: 20px;
+    display: inline;
+}
+.cont img:hover{
+    filter: invert(40%) sepia(50%) saturate(2000%) hue-rotate(230deg);
+}
+
+.cont p{
+    width: 37px;
+    height: 16px;
+    color: #050552;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.cont p:hover{
+    color: #554EF1;
+}
