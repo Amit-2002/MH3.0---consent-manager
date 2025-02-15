@@ -1,0 +1,174 @@
+.mainContainer{
+    width: 1156px;
+    height: 822px;
+    position: relative;
+}
+
+.formBox
+{
+    width: 567px;
+    height: 438px;
+    position: absolute;
+    top: 120px;
+    left: 294px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.heading{
+    width: 203px;
+    height: 30px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 4px;
+}
+.heading h1{
+    width: 203px;
+    height: 30px;
+    font-family: "Inter", serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(5, 5, 82, 0.8);
+    letter-spacing: -0.4px;
+    text-align: center;
+}
+
+
+
+.inputCont{
+    width: 567px;
+    height: 384px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+.input{
+    width: 567px;
+    height: 384px;
+    border-radius: 8px;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    background: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12) , 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+
+.formContent
+{
+    width: 503px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.inputFields
+{
+    width: 503px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.inputFields > div{
+    width: 503px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.inputFields .box{
+    width: 503px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.label{
+    width: 180px;
+    height: 21px;
+    padding: 0 2px;
+}
+.label p{
+    width: 72px;
+    height: 21px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: rgba(5, 5, 82, 0.6);
+}
+.inptBox{
+    width: 370px;
+    height: 36px;
+    border-radius: 6px;
+    padding: 5.5px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid rgba(217, 219, 221, 1);
+}
+.inptBox input{
+    width: 293px;
+    height: 21px;
+    color: rgba(131, 131, 131, 1);
+    border: none;
+}
+
+
+.btnContainer
+{
+    width: 503px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.btnContainer button{
+    width: 503px;
+    min-width: 64px;
+    height: 36px;
+    border-radius: 6px;
+    padding: 11.5px 16px;
+    background: rgba(85, 78, 241, 0.2);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.btnContainer h3{
+    width: 471px;
+    height: 21px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+

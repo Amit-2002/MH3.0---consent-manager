@@ -4,7 +4,7 @@
     height: 822px;
     min-width: 216px;
     max-width: 216px;
-    border-right:0.5px solid #050552;
+    border-right: 0.5px solid rgba(5, 5, 82, 0.1);
     padding: 24px 12.5px 24px 12px;
 
     display: flex;
