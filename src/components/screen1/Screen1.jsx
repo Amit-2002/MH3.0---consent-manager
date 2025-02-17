@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom"
 import styles from "./screen1.module.css"
 
 function Screen1() {
+    const navigate = useNavigate()
   return (
     <div className={styles.mainContainer}>
         <div className={styles.formBox}>
@@ -70,7 +72,7 @@ function Screen1() {
                         </div>
 
                         <div className={styles.btnContainer}>
-                            <button><h3>Request Consent</h3></button>
+                            <button onClick={()=> navigate("/screen2")}><h3>Request Consent</h3></button>
                         </div>
                     </div>
                 </div>

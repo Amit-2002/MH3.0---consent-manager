@@ -159,6 +159,10 @@
     align-items: center;
     gap: 4px;
 }
+.btnContainer button:hover{
+    cursor: pointer;
+    background: rgba(85, 78, 241, 1);
+}
 .btnContainer h3{
     width: 471px;
     height: 21px;

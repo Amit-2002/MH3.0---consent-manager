@@ -1,8 +1,11 @@
 import styles from "./screen2.module.css";
 import angel from "../../assets/angel.svg"
 import hv from "../../assets/hv.svg"
+import { useNavigate } from "react-router-dom";
 
 function Screen2() {
+    const navigate = useNavigate();
+
   return (
     <main className={styles.main}>
         <section className={styles.mainContainer}>
@@ -67,8 +70,10 @@ function Screen2() {
                     </div>
 
                     <div className={styles.buttonsCont}>
-                        <button><h4>Deny</h4></button>
-                        <button className={styles.btnBlue}><h4>Allow</h4></button>
+
+                        <button onClick={()=> navigate('/')}><h4>Deny</h4></button>
+
+                        <button onClick={()=>navigate('/screen3')} className={styles.btnBlue}><h4>Allow</h4></button>
                     </div>
 
                 </section>

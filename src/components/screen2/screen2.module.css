@@ -234,6 +234,11 @@
     display: flex;
     gap: 12px;
 }
+.buttonsCont button:nth-child(1):hover{
+    cursor: pointer;
+    background-color: #f0f0f0; 
+    color: #000;
+}
 
 .buttonsCont button{
     width: 245.5px;
@@ -264,8 +269,15 @@
 .buttonsCont .btnBlue{
     background: rgba(85, 78, 241, 1);
 }
+.buttonsCont .btnBlue:hover{
+    cursor: pointer;
+    background-color: rgba(85, 78, 241, 0.8);
+}
 .btnBlue h4{
     color: rgba(255, 255, 255, 1);
+}
+.btnBlue h4:hover{
+    color: #000; 
 }
 
 
