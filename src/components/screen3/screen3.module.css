@@ -7,7 +7,7 @@
 .mainCont
 {
     width: 503px;
-    height: 745px;
+    /* height: 745px; */
     position: absolute;
     top: 40px;
     left: 327px;
@@ -15,7 +15,6 @@
     background: rgba(255, 255, 255, 1);
     border-bottom: 1px solid rgba(230, 230, 230, 1);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12) , 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
-
 }
                     /* top section */
 .topSection
@@ -58,7 +57,6 @@
     width: 344px;
     height: 36px;
     border-radius: 6px;
-    border: 1px solid red;
     padding: 5.5px 12px;
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(217, 219, 221, 1);
@@ -115,6 +113,410 @@
                                 /* bottom section */
 .bottomSection{
     width: 503px;
-    /* height: 1394px; */
-    background: palegoldenrod;
+    height: 589px;   /* height of mainCont - height of top section (745-156)*/
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* border: 1px solid red; */
+    display: none;
+}
+.bottomSection::-webkit-scrollbar {
+    width: 6px; /* Scrollbar thickness */
+    height: 121px;
+}
+
+
+.bottomSection::-webkit-scrollbar-thumb {
+    background: rgba(205, 205, 220, 1);
+    border-radius: 100px; /* Fully rounded scrollbar */
+}
+
+                        /* status container */
+.status
+{
+    width: 439px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.status h3{
+    width: 105px;
+    height: 21px;
+    font-family: "Inter", serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: rgba(5, 5, 82, 0.8);
+}
+.acceptedCont
+{
+    width: 102px;
+    height: 32px;
+    border: 1px solid rgba(0, 102, 68, 1);
+    background: rgba(240, 250, 245, 1);
+    border-radius: 6px;
+    padding: 6px 12px 6px 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.acceptedCont .box{
+    width: 82px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.acceptedCont .imgCont{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.acceptedCont p{
+    width: 60px;
+    height: 20px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgba(0, 102, 68, 1);
+}
+
+                                /* consent details */
+.consentDetails
+{
+    width: 439px;
+    /* height: 381px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.consentDetails .heading{
+    width: 108px;
+    height: 21px;
+    font-family: "Inter", serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: rgba(5, 5, 82, 0.8);
+}
+
+.detailsCont
+{
+    width: 439px;
+    /* height: 340px; */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.detailsCont div
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.detailsCont h3, p{
+    font-family: "Inter", serif;
+    font-weight: 500;
+    size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.4px;
+    color: rgba(5, 5, 82, 0.6);
+}
+.detailsCont p{
+    color: rgba(5, 5, 82, 0.8);
+}
+
+.detailsCont h3
+{
+    width: 190px;
+    height: 21px;
+}
+.detailsCont p{
+    width: 249px;
+    height: 21px;
+}
+
+.detailsCont .deviceId
+{
+    width: 439px;
+    height: 42px;
+    align-items: center;
+}
+
+.deviceId p{
+    width: 249px;
+    height: 42px;
+}
+
+
+.detailsCont .hashedUserId{
+    width: 439px;
+    height: 63px;
+}
+
+.hashedUserId p{
+    width: 249px;
+    height: 63px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+
+.detailsCont .timestamp
+{
+    width: 439px;
+    height: 21px;
+}
+
+.timestamp p{
+    width: 249px;
+    height: 21;
+}
+
+
+.detailsCont .ipAddress
+{
+    width: 439px;
+    height: 21px;
+}
+
+.ipAddress p{
+    width: 249px;
+}
+
+
+.detailsCont .scope
+{
+    width: 439px;
+    height: 21px;
+}
+
+.scope p{
+    width: 249px;
+}
+
+
+.detailsCont .purpose
+{
+    width: 439px;
+    height: 92px;
+}
+
+.purpose div{
+    width: 249px;
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.purpose div p{
+    width: 249px;
+    height: 42px;
+}
+
+
+
+
+
+                                    /* tenure2Main */
+.tenure2Main
+{
+    width: 439px;
+    height: 99px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tenure2Main h2{
+    width: 47px;
+    height: 21px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.2%;
+    color: rgba(5, 5, 82, 0.8);
+}
+
+.tenure2Details
+{
+    width: 439px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.tenure2Details div
+{
+    width: 439px;
+    height: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tenure2Details p, h3{
+    height: 21px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.4px;
+}
+.tenure2Details p{
+    width: 190px;
+    color: rgba(5, 5, 82, 0.6);
+}
+.tenure2Details h3{
+    width: 249px;
+    color: rgba(5, 5, 82, 0.8);
+}
+
+
+
+
+                                /* sdk section */
+.sdk
+{
+    width: 439px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sdk h2, h3, p
+{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.2%;
+}
+
+.sdk h2{
+    width: 84;
+    height: 21;
+    color: rgba(5, 5, 82, 0.8);
+}
+
+.sdkDetails
+{
+    width: 439px;
+    height: 79px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sdkDetails div
+{
+    width: 439px;
+    height: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+.sdkDetails div:nth-child(2){
+    height: 42px;
+}
+
+.sdkDetails h3, p
+{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.2%;
+}
+
+.sdkDetails p{
+    width: 190px;
+    color: rgba(5, 5, 82, 0.6);
+}
+.sdkDetails h3{
+    width: 249px;
+    height: 21px;
+    color: rgba(5, 5, 82, 0.8);
+}
+
+.sdkDetails .link h3{
+    height: 42px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    padding-right: 22px;  
+}
+
+
+
+
+                                    /* plicyMain section  */
+.policyMain
+{
+    width: 439px;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.policyMain h2{
+    width: 95;
+    height: 21;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.2%;
+    color: rgba(5, 5, 82, 0.8);
+}
+
+.policyDetails{
+    width: 439px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policyDetails div
+{
+    width: 439px;
+    height: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.policyDetails p, h3
+{
+    height: 21px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.2%;
+}
+.policyDetails p{
+    width: 190px;
+    color: rgba(5, 5, 82, 0.6);
+}
+.policyDetails h3{
+    width: 249px;
+    color: rgba(5, 5, 82, 0.8);
 }
