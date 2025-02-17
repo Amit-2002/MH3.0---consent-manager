@@ -1,8 +1,6 @@
 import {
   BrowserRouter,
-  createBrowserRouter,
   Route,
-  RouterProvider,
   Routes,
 } from "react-router-dom";
 import Screen1 from "./components/screen1/Screen1";
@@ -17,15 +15,13 @@ function App() {
       <SideNav />
       <SideOptions />
 
-      {/* <Screen1/> */}
-      {/* <Screen2 /> */}
-      {/* <Screen3 /> */}
-
-      <Routes>
-        <Route path="/" element={<Screen1 />} />
-        <Route path="/screen2" element={<Screen2 />} />
-        <Route path="/screen3" element={<Screen3 />} />
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Screen1 />} />
+          <Route path="/screen2" element={<Screen2 />} />
+          <Route path="/screen3" element={<Screen3 />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
