@@ -115,8 +115,18 @@
     font-size: 12px;
     line-height: 21px;
     letter-spacing: -0.4px;
-    text-align: center;
+    text-align: cente;
     color: rgba(5, 5, 82, 0.6);
+}
+
+.inputFields :nth-child(3) p{
+    width: 81px;
+}
+.inputFields :nth-child(4) p{
+    width: 48px;
+}
+.inputFields :nth-child(5) p{
+    width: 37px;
 }
 .inptBox{
     width: 370px;
@@ -134,6 +144,9 @@
     height: 21px;
     color: rgba(131, 131, 131, 1);
     border: none;
+}
+.inptBox input:focus{
+    outline: none;
 }
 
 

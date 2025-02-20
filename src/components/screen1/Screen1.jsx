@@ -28,7 +28,7 @@ function Screen1() {
                             <div>
                                 <div className={styles.box}>
                                     <div className={styles.label}>
-                                        <p>Customer ID</p>
+                                        <p>Redirect URI</p>
                                     </div>
                                     <div className={styles.inptBox}>
                                         <input type="text" />
@@ -39,7 +39,7 @@ function Screen1() {
                             <div>
                                 <div className={styles.box}>
                                     <div className={styles.label}>
-                                        <p>Customer ID</p>
+                                        <p>Policy Version</p>
                                     </div>
                                     <div className={styles.inptBox}>
                                         <input type="text" />
@@ -50,7 +50,7 @@ function Screen1() {
                             <div>
                                 <div className={styles.box}>
                                     <div className={styles.label}>
-                                        <p>Customer ID</p>
+                                        <p>Purpose</p>
                                     </div>
                                     <div className={styles.inptBox}>
                                         <input type="text" />
@@ -61,7 +61,7 @@ function Screen1() {
                             <div>
                                 <div className={styles.box}>
                                     <div className={styles.label}>
-                                        <p>Customer ID</p>
+                                        <p>Scope</p>
                                     </div>
                                     <div className={styles.inptBox}>
                                         <input type="text" />
